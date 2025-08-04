@@ -1,6 +1,14 @@
 # include<stdio.h>
+#include <stdio.h>
 int main()
 {
-    printf("Hello World");
+    int age;
+    float weight;
+    printf("eneter your age and weight ");
+    scanf("%d %f", &age, &weight);
+    printf("age : %d\n",age);
+    printf("age: %f\n",weight);
+
+
 
 }

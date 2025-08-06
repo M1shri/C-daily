@@ -6,13 +6,13 @@ int main()
     char name[20];
     int area;
     printf("enter your Name \n");
-    scanf("%s",name);
+    fgets(name, sizeof(name), stdin);
     printf("enter the length- ");
     scanf("%d",&length);
     printf("enter the breadth- ");
     scanf("%d",&breadth);
     area= length *breadth;
-    printf("area- \n",area);
+    printf("area :- %d",area);
     return 0;
 
 }

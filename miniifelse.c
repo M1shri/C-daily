@@ -5,6 +5,6 @@ int main()
     int b=5;
     int max;
     max = (a>b) ? a : b;
-    printf("%d ",max);
+    printf(" The bigger number is- %d ",max);
 
 }

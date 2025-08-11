@@ -1,16 +1,15 @@
 #include <stdio.h>
 
 int main() {
-    char ch;
+    int num;
 
-    printf("Enter q to quit: ");
-    scanf(" %c", &ch);
+    do {
+        printf("Enter a positive number: ");
+        scanf("%d", &num);
+    } while (num <= 0);  // repeats if input is not positive
 
-    while (ch != 'q') {
-        printf("You typed %c. Try again: ", ch);
-        scanf(" %c", &ch);
-    }
-
-    printf("Goodbye!\n");
+    printf("You entered %d\n", num);
     return 0;
 }
+
+// This program prompts the user to enter a positive number and continues to ask until a valid input is given.

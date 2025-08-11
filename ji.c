@@ -1,10 +1,16 @@
 #include <stdio.h>
-int main()
-{
-    int a= 10;
-    int b=5;
-    int max;
-    max = (a>b) ? a : b;
-    printf(" The bigger number is- %d ",max);
 
+int main() {
+    char ch;
+
+    printf("Enter q to quit: ");
+    scanf(" %c", &ch);
+
+    while (ch != 'q') {
+        printf("You typed %c. Try again: ", ch);
+        scanf(" %c", &ch);
+    }
+
+    printf("Goodbye!\n");
+    return 0;
 }

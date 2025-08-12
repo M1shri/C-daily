@@ -1,15 +1,20 @@
 #include <stdio.h>
 
-int main() {
-    int num;
-
-    do {
-        printf("Enter a positive number: ");
-        scanf("%d", &num);
-    } while (num <= 0);  // repeats if input is not positive
-
-    printf("You entered %d\n", num);
-    return 0;
+int main()
+{
+    int num, prime=0;
+    printf("Enter an integer: ");
+    scanf("%d",&num);
+    for(int i=1;i<=num;i++)
+    {
+        if(num % i == 0)
+        {
+            prime++; 
+        }
+    
+    }
+    if(prime == 2)
+    printf("%d is a prime number\n", num);
+    else
+    printf("%d is not a prime number\n", num);  
 }
-
-// This program prompts the user to enter a positive number and continues to ask until a valid input is given.

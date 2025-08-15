@@ -1,20 +1,16 @@
 #include <stdio.h>
-void sum(int a , int b);
-int sum1=0;
-int a,b;
+void sum(int a, int b);
 int main()
 {
-    
-    printf("enter the first number- ");
-    scanf("%d",&a);
-    printf("enter the second number- ");
-    scanf("%d",&b);
-    sum(a,b);
+    int x,y;
+    printf("Enter the first number ");
+    scanf("%d",&x);
+    printf("Enter the second number ");
+    scanf("%d",&y);
+    sum(x , y);
 }
-
-void sum(int a, int b)
-{
-    sum1 = a+b;
-    printf("SUM = %d",sum1);
-    
-}
+   void sum(int a ,int b)
+   {
+    int sum1= a+b;
+    printf("%d\n",sum1);
+   }

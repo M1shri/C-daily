@@ -9,7 +9,7 @@ int main()
 }
 void hello()
 {
-    printf("HELLO");
+    printf("HELLO \n");
 }
 void goodbye()
 {

@@ -1,17 +1,20 @@
 #include <stdio.h>
-void hello();
-void goodbye();
+void sum(int a , int b);
+int sum1=0;
+int a,b;
 int main()
 {
-    hello( );
-    goodbye();
-    return 0;
+    
+    printf("enter the first number- ");
+    scanf("%d",&a);
+    printf("enter the second number- ");
+    scanf("%d",&b);
+    sum(a,b);
 }
-void hello()
+
+void sum(int a, int b)
 {
-    printf("HELLO \n");
-}
-void goodbye()
-{
-    printf("GOODBYE");
+    sum1 = a+b;
+    printf("SUM = %d",sum1);
+    
 }

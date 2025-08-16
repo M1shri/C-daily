@@ -3,10 +3,7 @@ void check(int a, int b);
 
 int main()
 {
-    int a =2;
-    int b= 4;
-    printf("%d \n%d\n", a , b);
-    check( a , b);
+  printf("Enter ");   
 }
 
 void check( int a , int b)

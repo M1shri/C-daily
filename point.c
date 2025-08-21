@@ -5,6 +5,6 @@ int main()
     int ptr = 5;
     
     printf("%p",*&a);
-    printf("hahaha %p",*&ptr);
+    printf("haha %p",*&ptr);
 
 }

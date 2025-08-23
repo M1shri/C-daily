@@ -1,10 +1,12 @@
 #include <stdio.h>
 int main()
 {
-    int a = 0;
-    int ptr = 5;
+    int a = 02, b=12;
+    int *ptr = &a;
+    int *i = &b;
     
-    printf("%p",*&a);
-    printf("haha %p",*&ptr);
+    printf("%p",*ptr);
+    printf("\n");
+    printf("%p",i);
 
 }

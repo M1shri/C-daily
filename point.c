@@ -7,6 +7,6 @@ int main()
     
     printf("%p",*ptr);
     printf("\n");
-    printf("%p",i);
+    printf("%u",i);
 
 }

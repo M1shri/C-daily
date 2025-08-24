@@ -1,12 +1,12 @@
 #include <stdio.h>
 int main()
 {
-    int a = 02, b=12;
+    int a = 2, b=12;
     int *ptr = &a;
     int *i = &b;
     
     printf("%p",*ptr);
     printf("\n");
-    printf("%u",i);
-
+    printf("%p",&a);
+    return 0;
 }

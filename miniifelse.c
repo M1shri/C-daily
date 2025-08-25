@@ -6,5 +6,5 @@ int main()
     int max;
     max = (a>b) ? a : b;
     printf(" The Bigger Number is- %d ",max);
-    printf("Enter the second number ");
+    printf("Enter the second number= ");
 }

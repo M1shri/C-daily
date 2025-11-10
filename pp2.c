@@ -11,13 +11,13 @@ int main()
         scanf("%d",&a[i]);
     }
 
-    printf("Enter elemnet to find ");
-    scanf("%d \n",&m);
+    printf("Enter elemnet to find \n");
+    scanf("%d",&m);
 
     for(int i=0; i<10; i++)
     {
         if(m==a[i])
-        printf("Element found at postion %d\n"+i+1);
+        printf("Element found at postion %d\n",i+1);
         
     }
     return 0;

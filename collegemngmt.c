@@ -65,7 +65,6 @@ if(temp1==1)
         printf("Student Marks - %0.2f\n",s4.marks);
         printf("Student course - %s\n",s4.course);
         printf("Student section - %c\n",s4.section);
-
         }
     if(temp2==3)
         {
@@ -74,13 +73,19 @@ if(temp1==1)
         if(temp2==s1.uid)
             {
             struct Student s1 = {0};
+            printf("Successfully Deleted");
             }
         if(temp2==s2.uid)
-        {
+            {
             struct Student s2 = {0};
-        }
+            printf("Successfully Deleted");
+            }
         if(temp2==s3.uid)
-        {
-            struct Student s3 = {0};
-        }
+            {
+            struct Student s3 = {0}; 
+            printf("Successfully Deleted");
+            }
+        else
+            printf("Student not found");
+    }
 }

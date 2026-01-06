@@ -16,7 +16,7 @@ struct Student s1 = {1, 95.00, "Btech CSE", 'C'};
 struct Student s2 = {2, 85.00, "Btech Data Science", 'A'};
 struct Student s3 = {3, 75.00, "Btech AI", 'D'};
 //idea : adding a infinite loop which keeps bringing us back to menu after the task until the user chooses to quit
-printf("      Menu       \n");
+printf("            \033[1mMenu\033[0m\n");
 printf("1.Student \n2.Faculty\n");
 scanf("%d",&temp1);
 if(temp1==1)
@@ -87,5 +87,6 @@ if(temp1==1)
             }
         else
             printf("Student not found");
+    }
     }
 }

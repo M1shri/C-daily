@@ -1,19 +1,19 @@
 #include <stdio.h>
 int main()
 {
-    int temp1,temp2,temp3,temp4,temp5,temp6,temp7;                                        //working variables
-    struct Student {                                        //struct student defining
+    int temp1,temp2,temp3,temp4,temp5,temp6,temp7;                           //working variables
+    struct Student {                                                         //struct student defining
         int uid;
         float marks;
         char course[50];
         char section;
     };
     struct Faculty{  
-        char name[30];                                                   //struct faculty defining
+        char name[30];                                                       //struct faculty defining
         int employid;
         int salary;
     };
-struct Student s1 = {1, 95.00, "Btech CSE", 'C'};           //feeding values
+struct Student s1 = {1, 95.00, "Btech CSE", 'C'};                           //feeding values
 struct Student s2 = {2, 85.00, "Btech Data Science", 'A'};
 struct Student s3 = {3, 75.00, "Btech AI", 'D'};
 
@@ -28,7 +28,7 @@ while(1)
     printf("            \033[1mMenu\033[0m\n");
     printf("1.Student \n2.Faculty\n3.Exit Program\n");
     scanf("%d",&temp1);
-    if(temp1==1)                                                //Student Dashboard Section
+    if(temp1==1)                                                        //Student Dashboard Section
         {
             printf("Student Dashboard \n");
             printf("1.View Student Details  \n2.Enroll New Student  \n");
@@ -83,10 +83,10 @@ while(1)
 
     if(temp1==2)
         {
-            printf("Faculty Dashboard \n");
+            printf("Faculty Dashboard \n");                                //Faculty Dashboard
             printf("1.Faculty Details \n2.Mark Attendance \n3.Suspend Student \n");
             scanf("%d",&temp4);
-            if(temp4==1)
+            if(temp4==1)                                                    //print Faculty details
             {
                 printf("enter Faculty UID : ");
                 scanf("%d",&temp5);
@@ -108,7 +108,7 @@ while(1)
                 else
                 printf("Faculty Not Found\n");
             }
-            if(temp4==2)
+            if(temp4==2)                                                   //Faculty Attendance
                 {
                         printf("Enter UID of Students present or input 9 for exit \n");
                         while(1)
@@ -124,7 +124,7 @@ while(1)
                 
 
             if(temp4==3)
-            {                                                                      //Removing student details
+            {                                                                      //Faculty Removing student details
                 printf("enter uid of the student to be remmoved :- ");
                 scanf("%d",&temp7);
                     if(temp2==s1.uid)
@@ -146,7 +146,7 @@ while(1)
                     {printf("Student not found");}
             }
         }
-        if(temp1==3)
+        if(temp1==3)                                                //Exit Program
         return 0;
     }
 }   
